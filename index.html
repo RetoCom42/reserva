@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Reservas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h2>Harry Den</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="estado_resultados.html">Estado de Resultados</a></li>
+                <li><a href="balance_general.html">Balance General</a></li>
+                <li><a href="destacamento1.html">Destacamento 1</a></li>
+                <li><a href="destacamento2.html">Destacamento 2</a></li>
+                <li><a href="destacamento3.html">Destacamento 3</a></li>
+                <li><a href="destacamento4.html">Destacamento 4</a></li>
+                <li><a href="destacamento5.html">Destacamento 5</a></li>
+                <li><a href="plana_mayor.html">Plana Mayor</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Estado de la Plantilla</h1>
+        </header>
+        <section class="cards">
+            <div class="card">Destacamento 1: 0</div>
+            <div class="card">Destacamento 2: 0</div>
+            <div class="card alert">Destacamento 3: 0</div>
+            <div class="card">Destacamento 4: 0</div>
+            <div class="card">Destacamento 5: 0</div>
+        </section>
+        <section class="details">
+            <div class="detail">Plana Mayor: 0</div>
+            <div class="detail alert">Total: 0</div>
+        </section>
+    </div>
+    <script src="js/script.js"></script>
+    <!-- Botón para abrir el modal -->
+<button id="openModalBtn">Añadir Reserva</button>
+
+<!-- El Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">×</span>
+        <h2>Agregar Reserva</h2>
+        <form id="addReservaForm">
+            <label for="unidad">Unidad:</label>
+            <input type="text" id="unidad" name="unidad" required>
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+            <label for="grado">Grado:</label>
+            <input type="text" id="grado" name="grado" required>
+            <label for="nombre_apellidos">Nombre y Apellidos:</label>
+            <input type="text" id="nombre_apellidos" name="nombre_apellidos" required>
+            <label for="c_identidad">Carnet de Identidad:</label>
+            <input type="text" id="c_identidad" name="c_identidad" required>
+            <label for="municipio">Municipio:</label>
+            <input type="text" id="municipio" name="municipio" required>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+            <label for="preparado">Preparado:</label>
+            <input type="checkbox" id="preparado" name="preparado">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <label for="recorrido">Recorrido:</label>
+            <input type="text" id="recorrido" name="recorrido" required>
+            <label for="causal">Causal:</label>
+            <input type="text" id="causal" name="causal" required>
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" name="observaciones" required></textarea>
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

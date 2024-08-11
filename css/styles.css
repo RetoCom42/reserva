@@ -1,0 +1,228 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar .profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px 20px;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #34495e;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+header {
+    background-color: #2980b9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    width: 70%;
+}
+
+.search-container button {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background-color: #2980b9;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+form button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #3498db;
+}
+/* Estilos para los contadores */
+#counters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.counter {
+    background-color: #2980b9;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#counter_plana_mayor {
+    background-color: #27ae60;
+}
+
+#counter_total {
+    background-color: #c0392b;
+    width: 300px;
+}
+/* Estilo moderno para los contadores */
+.counter.modern {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.counter.modern:hover {
+    transform: translateY(-5px);
+}
+
+.counter.modern span {
+    font-weight: bold;
+    font-size: 1.5em;
+}
